@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Andalos</title>
+    <link rel="stylesheet" href="style/index.css">
+    <link rel="icon" href="images/L B&W.png">
+</head>
+<body>
+    <div id="body">
+        <header>
+            <img src="images/L B&W.png" alt="" id="logo">
+            <ul id="nav">
+                <a href="#" class="nav-items"><i>Home</i></a>
+                <a href="#" class="nav-items"><i>Contact</i></a>
+                <a href="#" class="nav-items"><i>team</i></a>
+            </ul>
+            <input type="checkbox" id="list-check" hidden>
+            <label for="list-check" id="btn-list">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                <path id="svg" d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM64 256c0-17.7 14.3-32 32-32H480c17.7 0 32 14.3 32 32s-14.3 32-32 32H96c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/>
+            </svg>
+            </label>
+        </header>
+        <div id="list">
+            <a href="#">Home</a>
+            <br>
+            <hr>
+            <br>
+            <a href="#">Contact</a>
+            <br>
+            <hr>
+            <br>
+            <a href="#">team</a>
+        </div>
+        <pre>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </pre>
+    </div>
+    <script>
+        setInterval( function(){
+            if(window.scrollY > 0) {
+                document.querySelector("header").style.backgroundColor = "black";
+                let allnavi= document.querySelectorAll(".nav-items");
+                allnavi.forEach(function(el){
+                    el.style.color = "white";
+                });
+                document.getElementById("svg").style.fill = "white";
+            }
+            else
+            {
+                document.querySelector("header").style.backgroundColor = "transparent";
+                let allnavi= document.querySelectorAll(".nav-items");
+                allnavi.forEach(function(el){
+                    el.style.color = "black";
+                });
+                document.getElementById("svg").style.fill = "black";
+            }
+        },1)
+    </script>
+</body>
+</html>
