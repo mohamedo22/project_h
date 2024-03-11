@@ -298,7 +298,7 @@ footer {
     top: 33rem;
   }
   #c1 {
-    top: 45rem;
+    top: 40rem;
     left: 13rem;
   }
   #cont_img {
@@ -306,6 +306,7 @@ footer {
     flex-wrap: wrap;
     width: fit-content;
     margin: auto;
+    margin-left: -0.5rem;
   }
   .span {
     width: 20rem;
