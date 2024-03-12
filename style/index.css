@@ -65,6 +65,12 @@ header {
   display: none;
   cursor: pointer;
 }
+#loader {
+  display: block;
+  width: fit-content;
+  margin: auto;
+  margin-top: 12rem;
+}
 #list {
   background-color: black;
   display: flex;

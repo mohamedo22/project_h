@@ -14,16 +14,22 @@
     />
   </head>
   <body>
-    <div id="body">
+    <marquee id="slider_w" direction="left" scrollamount="10">
+      <pre>
+Andalos  Photography                       Andalos  Photography                        Andalos  Photography</pre
+      >
+    </marquee>
+  <img src="images/Ellipsis-1.3s-203px.gif" id="loader" alt="" />
+  <div id="bod" style="display: none;">
       <header>
         <img src="images/L B&W.png" alt="" id="logo" />
         <ul id="nav">
-          <a href="#" class="nav-items"><i>Home</i></a>
-          <a href="#" class="nav-items"><i>Contact</i></a>
+          <a href="index.html" class="nav-items"><i>Home</i></a>
+          <a href="contact_us.html" class="nav-items"><i>Contact</i></a>
           <a href="#" class="nav-items" style="margin-left: 13rem"
             ><i>team</i></a
           >
-          <a href="#" class="nav-items"><i>Pervious work</i></a>
+          <a href="previous.html" class="nav-items"><i>Pervious work</i></a>
         </ul>
         <input type="checkbox" id="list-check" hidden />
         <label for="list-check" id="btn-list">
@@ -35,21 +41,20 @@
           </svg>
         </label>
       </header>
-      <marquee id="slider_w" direction="left" scrollamount="10">
-        <pre>
-Andalos  Photography                       Andalos  Photography                        Andalos  Photography</pre
-        >
-      </marquee>
       <div id="list">
-        <a href="#">Home</a>
+        <a href="index.html">Home</a>
         <br />
         <hr />
         <br />
-        <a href="#">Contact</a>
+        <a href="contact_us.html">Contact</a>
         <br />
         <hr />
         <br />
         <a href="#">team</a>
+        <br />
+        <hr />
+        <br />
+        <a href="previous.html">Pervious work</a>
       </div>
       <div id="cont_s">
         <div class="igcont">
@@ -172,7 +177,7 @@ Andalos  Photography                       Andalos  Photography                 
         <div class="border-r" id="c1"></div>
         <div class="border-r" id="c2"></div>
       </div>
-    </div>
+    
     <footer>
       <div class="footer-content">
         <div class="footer-contact">
@@ -192,17 +197,21 @@ Andalos  Photography                       Andalos  Photography                 
           <h3>Quick Links</h3>
           <ul>
             <li><a href="#">Team</a></li>
-            <li><a href="#">Pervious work</a></li>
-            <li><a href="#">Contact Us</a></li>
+            <li><a href="previous.html">Pervious work</a></li>
+            <li><a href="contact_us.html">Contact Us</a></li>
           </ul>
         </div>
       </div>
       <div class="footer-bottom">
-        <p><pre>&copy; 2024 Mohamed O. All rights reserved.</pre></p>
+        <p><pre>&copy; 2024 Mohamed Osama . All rights reserved.</pre></p>
       </div>
     </footer>
-
+  </div>
     <script>
+      setTimeout(function () {
+        document.getElementById("loader").style.display = "none";
+        document.getElementById("bod").style.display = "block";
+      }, 1500);
       setInterval(function () {
         if (window.scrollY > 0) {
           document.querySelector("header").style.backgroundColor = "black";
