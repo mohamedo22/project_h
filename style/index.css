@@ -118,7 +118,7 @@ header {
 #slider_w {
   position: fixed;
   z-index: 9999;
-  top: 5.5rem;
+  top: 7rem;
   pointer-events: none;
 }
 #cont_s {
